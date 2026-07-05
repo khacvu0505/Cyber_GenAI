@@ -1,0 +1,34 @@
+[
+  {
+    "role": "user",
+    "content": "1+1 ban bao nhieu"
+  },
+  {
+    "role": "assistant",
+    "content": "1 + 1 = 2."
+  },
+  {
+    "role": "user",
+    "content": "nhân thêm 2 là bao nhiêu"
+  },
+  {
+    "role": "assistant",
+    "content": "(1 + 1) = 2. Nhân thêm 2 tức là 2 × 2 = 4."
+  },
+  {
+    "role": "user",
+    "content": "sau đó cộng thêm 2"
+  },
+  {
+    "role": "assistant",
+    "content": "Tức là 4 + 2 = 6."
+  },
+  {
+    "role": "user",
+    "content": "thêm 4 nữa"
+  },
+  {
+    "role": "assistant",
+    "content": "6 + 4 = 10. Vậy kết quả cuối cùng là 10."
+  }
+]

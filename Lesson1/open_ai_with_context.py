@@ -16,6 +16,7 @@ VALID_CHAT_ROLES = {"user", "assistant"}
 
 
 def build_messages(chat_history):
+    # Bạn code ở đây
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for message in chat_history:
         if message["role"] in VALID_CHAT_ROLES:
@@ -25,6 +26,7 @@ def build_messages(chat_history):
 
 # Hàm xử lý câu hỏi của user
 def generate_bot_response(chat_history):
+    # Bạn code ở đây
     try:
         response = client.chat.completions.create(
             model="gpt-5-mini",
@@ -36,12 +38,14 @@ def generate_bot_response(chat_history):
 
 
 def save_chat_history():
+    # Bạn code ở đây
     with CHAT_HISTORY_FILE.open("w", encoding="utf-8") as f:
         json.dump(st.session_state.chat_history, f, ensure_ascii=False, indent=2) # ensure ascii=False để lưu tiếng Việt đúng định dạng, indent=2 để dễ đọc
 
 
 
 def load_chat_history():
+    # Bạn code ở đây
     try:
         if CHAT_HISTORY_FILE.exists():
             with CHAT_HISTORY_FILE.open("r", encoding="utf-8") as f:

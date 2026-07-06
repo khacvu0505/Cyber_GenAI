@@ -2,6 +2,11 @@
     "python-envs.defaultEnvManager": "ms-python.python:venv",
     "python-envs.pythonProjects": [
         {
+            "path": "Lesson1",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        },
+        {
             "path": "Lesson2",
             "envManager": "ms-python.python:venv",
             "packageManager": "ms-python.python:pip"

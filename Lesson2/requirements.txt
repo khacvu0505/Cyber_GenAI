@@ -1,1 +1,9 @@
 openai
+langchain
+langchain-core
+langchain-openai
+langchain-groq
+langchain-community
+python-dotenv
+ipykernel
+jupyter

@@ -1,3 +1,5 @@
+# streamlit run open_ai_with_context.py
+
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
@@ -16,15 +18,20 @@ VALID_CHAT_ROLES = {"user", "assistant"}
 
 
 def build_messages(chat_history):
+    # Bạn code ở đây
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for message in chat_history:
         if message["role"] in VALID_CHAT_ROLES:
-            messages.append({"role": message["role"], "content": message["content"]})
+            # Lượt 1: build_messages() chạy → tạo list mới → [system, user₁]                   
+            # Lượt 2: build_messages() chạy → tạo list mới → [system, user₁, asst₁, user₂]     
+            # Lượt 3: build_messages() chạy → tạo list mới → [system, user₁, asst₁, user₂, ...]
+            messages.append({"role": message["role"], "content": message["content"]}) 
     return messages
 
 
 # Hàm xử lý câu hỏi của user
 def generate_bot_response(chat_history):
+    # Bạn code ở đây
     try:
         response = client.chat.completions.create(
             model="gpt-5-mini",
@@ -36,12 +43,14 @@ def generate_bot_response(chat_history):
 
 
 def save_chat_history():
+    # Bạn code ở đây
     with CHAT_HISTORY_FILE.open("w", encoding="utf-8") as f:
         json.dump(st.session_state.chat_history, f, ensure_ascii=False, indent=2) # ensure ascii=False để lưu tiếng Việt đúng định dạng, indent=2 để dễ đọc
 
 
 
 def load_chat_history():
+    # Bạn code ở đây
     try:
         if CHAT_HISTORY_FILE.exists():
             with CHAT_HISTORY_FILE.open("r", encoding="utf-8") as f:

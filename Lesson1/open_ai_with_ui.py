@@ -11,7 +11,7 @@ client = OpenAI(
 )
 # Hàm xử lý câu hỏi của user
 def generate_bot_response(user_request):
-    
+    # Bạn code ở đây
     try:
         response = client.chat.completions.create(
             model="gpt-5-mini",

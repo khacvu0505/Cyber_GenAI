@@ -1,0 +1,21 @@
+# Môi trường ảo (virtual environment)
+myenv/
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Biến môi trường (secrets)
+.env
+
+# IDE / editor
+.vscode/
+.idea/
+
+# macOS
+.DS_Store

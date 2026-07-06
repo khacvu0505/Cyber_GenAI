@@ -22,7 +22,10 @@ def build_messages(chat_history):
     messages = [{"role": "system", "content": SYSTEM_PROMPT}]
     for message in chat_history:
         if message["role"] in VALID_CHAT_ROLES:
-            messages.append({"role": message["role"], "content": message["content"]})
+            # Lượt 1: build_messages() chạy → tạo list mới → [system, user₁]                   
+            # Lượt 2: build_messages() chạy → tạo list mới → [system, user₁, asst₁, user₂]     
+            # Lượt 3: build_messages() chạy → tạo list mới → [system, user₁, asst₁, user₂, ...]
+            messages.append({"role": message["role"], "content": message["content"]}) 
     return messages
 
 

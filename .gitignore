@@ -9,9 +9,18 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 
+# Node / Next.js
+node_modules/
+.next/
+dist/
+build/
+*.log
+
 # Secrets
 .env
 .env.local
+.env.docker
+.env.*.local
 
 # macOS
 .DS_Store

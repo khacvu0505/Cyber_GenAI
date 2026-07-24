@@ -1,0 +1,15 @@
+__pycache__
+*.py[cod]
+.env
+.env.*
+!.env.example
+.venv
+venv
+tests
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.git
+.gitignore
+README.md
+requirements-local.txt

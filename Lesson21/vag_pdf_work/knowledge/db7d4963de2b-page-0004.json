@@ -1,0 +1,65 @@
+{
+  "document_title": "Nghị định",
+  "document_number": "130/2025/NĐ-CP",
+  "issued_date": "",
+  "full_text": "3. Trong thời gian các quy định của Nghị định này có hiệu lực, nếu quy định về thẩm quyền, trách nhiệm quản lý nhà nước, trình tự, thủ tục trong Nghị định này khác với các văn bản quy phạm pháp luật có liên quan thì thực hiện theo quy định tại Nghị định này.\n\nNơi nhận:\n- Ban Bí thư Trung ương Đảng;\n- Thủ tướng, các Phó Thủ tướng Chính phủ;\n- Các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ;\n- HĐND, UBND các tỉnh, thành phố trực thuộc trung ương;\n- Văn phòng Trung ương và các Ban của Đảng;\n- Văn phòng Tổng Bí thư;\n- Văn phòng Chủ tịch nước;\n- Hội đồng Dân tộc và các Ủy ban của Quốc hội;\n- Văn phòng Quốc hội;\n- Tòa án nhân dân tối cao;\n- Viện kiểm sát nhân dân tối cao;\n- Kiểm toán nhà nước;\n- Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam;\n- Cơ quan trung ương của các đoàn thể;\n- VPCP: BTCN, các PCN, Trợ lý TTg, TGĐ Cổng TTĐT, các Vụ, Cục, đơn vị trực thuộc, Công báo;\n- Lưu: VT, KTTH (2b).\n\nTM. CHÍNH PHỦ\nTHỦ TƯỚNG\nPHÓ THỦ TƯỚNG\n\nNguyễn Hòa Bình",
+  "sections": [
+    {
+      "label": "3.",
+      "title": "",
+      "content": "Trong thời gian các quy định của Nghị định này có hiệu lực, nếu quy định về thẩm quyền, trách nhiệm quản lý nhà nước, trình tự, thủ tục trong Nghị định này khác với các văn bản quy phạm pháp luật có liên quan thì thực hiện theo quy định tại Nghị định này.",
+      "entities": [
+        "Nghị định này"
+      ],
+      "dates": []
+    },
+    {
+      "label": "Nơi nhận",
+      "title": "",
+      "content": "- Ban Bí thư Trung ương Đảng;\n- Thủ tướng, các Phó Thủ tướng Chính phủ;\n- Các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ;\n- HĐND, UBND các tỉnh, thành phố trực thuộc trung ương;\n- Văn phòng Trung ương và các Ban của Đảng;\n- Văn phòng Tổng Bí thư;\n- Văn phòng Chủ tịch nước;\n- Hội đồng Dân tộc và các Ủy ban của Quốc hội;\n- Văn phòng Quốc hội;\n- Tòa án nhân dân tối cao;\n- Viện kiểm sát nhân dân tối cao;\n- Kiểm toán nhà nước;\n- Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam;\n- Cơ quan trung ương của các đoàn thể;\n- VPCP: BTCN, các PCN, Trợ lý TTg, TGĐ Cổng TTĐT, các Vụ, Cục, đơn vị trực thuộc, Công báo;\n- Lưu: VT, KTTH (2b).",
+      "entities": [
+        "Ban Bí thư Trung ương Đảng",
+        "Chính phủ",
+        "HĐND",
+        "UBND",
+        "Văn phòng Trung ương",
+        "Văn phòng Tổng Bí thư",
+        "Văn phòng Chủ tịch nước",
+        "Hội đồng Dân tộc",
+        "Quốc hội",
+        "Văn phòng Quốc hội",
+        "Tòa án nhân dân tối cao",
+        "Viện kiểm sát nhân dân tối cao",
+        "Kiểm toán nhà nước",
+        "Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam",
+        "VPCP"
+      ],
+      "dates": []
+    },
+    {
+      "label": "TM. CHÍNH PHỦ",
+      "title": "THỦ TƯỚNG – PHÓ THỦ TƯỚNG",
+      "content": "Nguyễn Hòa Bình",
+      "entities": [
+        "Chính phủ",
+        "Nguyễn Hòa Bình"
+      ],
+      "dates": []
+    }
+  ],
+  "continues_from_previous_page": true,
+  "continues_to_next_page": false,
+  "visual_notes": [
+    "Trang đánh số 4.",
+    "Có con dấu tròn của Chính phủ chồng lên phần chức danh và chữ ký.",
+    "Có chữ ký viết tay bên trên tên người ký."
+  ],
+  "uncertain_text": [
+    "Phần ký hiệu/ghi chú rất nhỏ ngay sau “KTTH (2b)” không đọc rõ."
+  ],
+  "confidence": 0.96,
+  "source_file": "Nghi_dinh_130_2025.pdf",
+  "source_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/Nghi_dinh_130_2025.pdf",
+  "page_number": 4,
+  "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0004.png"
+}

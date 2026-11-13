@@ -1,0 +1,27 @@
+docker pull postgres:16-alpine
+
+# Cách 1: Có thấy log khi tạo postgres-demo
+docker run --name postgres-demo -e POSTGRES_USER=khacvu0505 -e POSTGRES_PASSWORD=khacvu0505 -e POSTGRES_DB=school -p 5439:5432 postgres:16-alpine
+
+# Cách 2: Chạy ngầm khi tạo postgres-demo (K cần thấy log)
+docker run -d --name postgres-demo -e POSTGRES_USER=khacvu0505 -e POSTGRES_PASSWORD=khacvu0505 -e POSTGRES_DB=school -p 5439:5432 postgres:16-alpine
+
+
+docker ps -> check xem có cái container nào đang chạy không
+docker start postgres-demo -> run container vs name "postgres-demo"
+docker stop postgres-demo -> stop container vs name "postgres-demo"
+
+docker rm postgres-demo -> Remove container với name "postgres-demo"
+
+# n8n
+docker pull n8nio/n8n
+
+# Run docker n8n
+docker run -d --name n8n-demo -p 5678:5678 -e GENERIC_TIMEZONE=Asia/Ho_Chi_Minh -e TZ=Asia/Ho_Chi_Minh n8nio/n8n
+
+# Build docker trong source
+docker compose up --build -d
+
+# Nếu chạy lệnh bên trên bị lỗi thì gõ lệnh bên dưới để xóa
+docker compse down
+

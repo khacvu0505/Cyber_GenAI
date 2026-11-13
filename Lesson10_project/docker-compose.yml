@@ -1,0 +1,58 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME:-documind}
+      POSTGRES_USER: ${DATABASE_USER:-documind}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-documind}
+    ports:
+      - "${DATABASE_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+
+  backend:
+    build: ./documind-enterprisedocum-be
+    environment:
+      DATABASE_DRIVER: postgresql+psycopg
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_NAME: ${DATABASE_NAME:-documind}
+      DATABASE_USER: ${DATABASE_USER:-documind}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-documind}
+      JWT_SECRET: ${JWT_SECRET:-local-development-secret-change-in-production}
+      CORS_ORIGINS: '["http://localhost:3000"]'
+      S3_REGION: ${AWS_REGION:-ap-southeast-1}
+      S3_BUCKET: ${S3_BUCKET:-documind-enterprise-documents}
+      S3_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
+      S3_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
+      S3_SESSION_TOKEN: ${AWS_SESSION_TOKEN:-}
+      S3_USE_SSL: "true"
+      EMBEDDING_PROVIDER: ${EMBEDDING_PROVIDER:-openai}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-text-embedding-3-small}
+      EMBEDDING_DIMENSIONS: ${EMBEDDING_DIMENSIONS:-1536}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      SEED_DEMO_DATA: ${SEED_DEMO_DATA:-true}
+      DEMO_PASSWORD: ${DEMO_PASSWORD:-ChangeMe123!}
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./documind-enterprise
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

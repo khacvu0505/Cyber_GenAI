@@ -1,0 +1,8 @@
+# Runtime required to open and execute the teaching notebook.
+jupyterlab>=4.0,<5.0
+ipykernel>=6.0,<7.0
+nbconvert>=7.0,<8.0
+openai>=2.0,<3.0
+
+# Optional: execute the extracted security examples as tests.
+pytest>=8.0,<10.0

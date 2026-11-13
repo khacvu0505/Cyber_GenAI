@@ -1,0 +1,21 @@
+# OpenAI API
+openai>=1.99.0
+
+# Local vector index
+faiss-cpu>=1.8.0
+
+# PDF inspection and page rendering
+pymupdf>=1.24.0
+pypdf>=5.0.0
+
+# Numerical and image processing
+numpy>=1.26.0,<3.0.0
+pillow>=10.0.0
+matplotlib>=3.8.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Notebook runtime
+jupyterlab>=4.0.0
+ipykernel>=6.0.0

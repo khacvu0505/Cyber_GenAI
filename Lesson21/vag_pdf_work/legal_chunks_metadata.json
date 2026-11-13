@@ -1,0 +1,143 @@
+{
+  "pdf_sha256": "db7d4963de2bb46707460d841e65c6c6b06650cc28952321c0c85d1b9281e3c2",
+  "embedding_model": "text-embedding-3-small",
+  "vector_dimension": 1536,
+  "chunks": [
+    {
+      "chunk_id": "p1-s1",
+      "text": "Văn bản: Nghị định Quy định về phân quyền, phân cấp trong lĩnh vực thống kê\nSố hiệu: 130/2025/NĐ-CP\nTrang: 1\nMục: Căn cứ Căn cứ ban hành\nCăn cứ Luật Tổ chức Chính phủ năm 2025;\n\nCăn cứ Luật Tổ chức chính quyền địa phương năm 2025;\n\nCăn cứ Nghị quyết số 190/2025/QH15 ngày 19 tháng 02 năm 2025 của Quốc hội quy định về xử lý một số vấn đề liên quan đến sắp xếp tổ chức bộ máy nhà nước;\n\nTheo đề nghị của Bộ trưởng Bộ Tài chính;\n\nChính phủ ban hành Nghị định quy định về phân quyền, phân cấp trong lĩnh vực thống kê.\nChủ thể: Luật Tổ chức Chính phủ, Luật Tổ chức chính quyền địa phương, Nghị quyết số 190/2025/QH15, Quốc hội, Bộ trưởng Bộ Tài chính, Chính phủ\nNgày/thời hạn: năm 2025, ngày 19 tháng 02 năm 2025",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 1,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0001.png",
+      "label": "Căn cứ"
+    },
+    {
+      "chunk_id": "p1-s2",
+      "text": "Văn bản: Nghị định Quy định về phân quyền, phân cấp trong lĩnh vực thống kê\nSố hiệu: 130/2025/NĐ-CP\nTrang: 1\nMục: Điều 1 Phạm vi điều chỉnh\nNghị định này quy định thẩm quyền trong lĩnh vực thống kê được quy định tại luật, nghị định của Chính phủ cần điều chỉnh để thực hiện phân quyền, phân cấp.\nChủ thể: Chính phủ\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 1,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0001.png",
+      "label": "Điều 1"
+    },
+    {
+      "chunk_id": "p1-s3",
+      "text": "Văn bản: Nghị định Quy định về phân quyền, phân cấp trong lĩnh vực thống kê\nSố hiệu: 130/2025/NĐ-CP\nTrang: 1\nMục: Điều 2 Nguyên tắc phân quyền, phân cấp\n1. Bảo đảm phù hợp với quy định của Hiến pháp; phù hợp với các nguyên tắc, quy định về phân quyền, phân cấp của Luật Tổ chức Chính phủ, Luật Tổ chức chính quyền địa phương.\n\n2. Bảo đảm phân cấp triệt để các nhiệm vụ giữa cơ quan nhà nước ở trung ương với chính quyền địa phương, bảo đảm thẩm quyền quản lý thống nhất của Chính phủ, quyền điều hành của người đứng đầu Chính phủ đối với lĩnh vực\nChủ thể: Hiến pháp, Luật Tổ chức Chính phủ, Luật Tổ chức chính quyền địa phương, Chính phủ\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 1,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0001.png",
+      "label": "Điều 2"
+    },
+    {
+      "chunk_id": "p2-s1",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 2\nMục: Khoản 3\nBảo đảm Chính phủ, Thủ tướng Chính phủ, các bộ, cơ quan ngang bộ tập trung thực hiện nhiệm vụ quản lý nhà nước ở tầm vĩ mô; xây dựng thể chế, chiến lược, quy hoạch, kế hoạch đồng bộ, thống nhất, giữ vai trò kiến tạo và tăng cường thanh tra, kiểm tra, giám sát.\nChủ thể: Chính phủ, Thủ tướng Chính phủ, các bộ, cơ quan ngang bộ\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 2,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0002.png",
+      "label": "Khoản 3"
+    },
+    {
+      "chunk_id": "p2-s2",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 2\nMục: Khoản 4\nĐẩy mạnh phân quyền, phân cấp và phân định rõ thẩm quyền của Hội đồng nhân dân, Ủy ban nhân dân, Chủ tịch Ủy ban nhân dân; phân định rõ thẩm quyền chung của Ủy ban nhân dân và thẩm quyền riêng của Chủ tịch Ủy ban nhân dân; bảo đảm phù hợp với nhiệm vụ, quyền hạn và năng lực của cơ quan, người có thẩm quyền thực hiện nhiệm vụ, quyền hạn được phân định.\nChủ thể: Hội đồng nhân dân, Ủy ban nhân dân, Chủ tịch Ủy ban nhân dân\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 2,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0002.png",
+      "label": "Khoản 4"
+    },
+    {
+      "chunk_id": "p2-s3",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 2\nMục: Khoản 5\nThực hiện phân quyền, phân cấp giữa các ngành, lĩnh vực có liên quan bảo đảm đồng bộ, tổng thể, liên thông, không bỏ sót hoặc chồng lấn, giao thoa nhiệm vụ; bảo đảm cơ sở pháp lý cho hoạt động bình thường, liên tục, thông suốt của các cơ quan; không để gián đoạn công việc, không để chồng chéo, trùng lặp, bỏ sót chức năng, nhiệm vụ, lĩnh vực, địa bàn.\n\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 2,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0002.png",
+      "label": "Khoản 5"
+    },
+    {
+      "chunk_id": "p2-s4",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 2\nMục: Khoản 6\nBảo đảm quyền con người, quyền công dân; bảo đảm công khai, minh bạch, tạo điều kiện thuận lợi cho cá nhân, tổ chức trong việc tiếp cận thông tin, thực hiện các quyền, nghĩa vụ và các thủ tục theo quy định của pháp luật; không làm ảnh hưởng đến hoạt động bình thường của xã hội, người dân, doanh nghiệp.\n\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 2,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0002.png",
+      "label": "Khoản 6"
+    },
+    {
+      "chunk_id": "p2-s5",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 2\nMục: Khoản 7\nBảo đảm không làm ảnh hưởng đến việc thực hiện các điều ước quốc tế, thỏa thuận quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.\nChủ thể: nước Cộng hòa xã hội chủ nghĩa Việt Nam\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 2,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0002.png",
+      "label": "Khoản 7"
+    },
+    {
+      "chunk_id": "p2-s6",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 2\nMục: Khoản 8\nNguồn lực thực hiện nhiệm vụ được phân quyền, phân cấp do ngân sách nhà nước bảo đảm theo quy định.\nChủ thể: ngân sách nhà nước\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 2,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0002.png",
+      "label": "Khoản 8"
+    },
+    {
+      "chunk_id": "p2-s7",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 2\nMục: Điều 3 Phân quyền trong lĩnh vực thống kê\n1. Việc quyết định tiến hành tổng điều tra thống kê quốc gia theo quy định tại điểm a khoản 3 Điều 28 Luật Thống kê do Bộ trưởng Bộ Tài chính thực hiện.\nChủ thể: Bộ trưởng Bộ Tài chính, Luật Thống kê\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 2,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0002.png",
+      "label": "Điều 3"
+    },
+    {
+      "chunk_id": "p3-s1",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 3\nMục: Khoản 2\nViệc điều chỉnh, bổ sung tổng điều tra thống kê quốc gia theo quy định tại khoản 3 Điều 29 Luật Thống kê do Bộ trưởng Bộ Tài chính thực hiện.\nChủ thể: Bộ trưởng Bộ Tài chính, Luật Thống kê\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 3,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0003.png",
+      "label": "Khoản 2"
+    },
+    {
+      "chunk_id": "p3-s2",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 3\nMục: Khoản 3\nViệc phân công cơ quan thực hiện tổng điều tra thống kê quốc gia khác theo quy định tại điểm b khoản 2 Điều 29 Luật Thống kê do Bộ trưởng Bộ Tài chính thực hiện.\nChủ thể: Bộ trưởng Bộ Tài chính, Luật Thống kê\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 3,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0003.png",
+      "label": "Khoản 3"
+    },
+    {
+      "chunk_id": "p3-s3",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 3\nMục: Điều 4 Phân cấp trong lĩnh vực thống kê\n1. Việc ban hành quy chế phổ biến thông tin thống kê nhà nước của hệ thống tổ chức thống kê tập trung theo quy định tại khoản 4 Điều 5 Nghị định số 94/2016/NĐ-CP ngày 01 tháng 7 năm 2016 quy định chi tiết và hướng dẫn thi hành một số điều của Luật Thống kê do Thủ trưởng cơ quan thống kê quốc gia thực hiện.\n\n2. Việc quyết định tiến hành điều tra đối với các cuộc điều tra thống kê phân công Bộ Tài chính thực hiện trong chương trình điều tra thống kê quốc gia theo quy định tại điểm b khoản 3 Điều 28 Luật Thống kê do Thủ trưởng cơ quan thống kê quốc gia thực hiện.\n\n3. Việc tổ chức, điều phối hoạt động nghiên cứu, ứng dụng phương pháp thống kê tiên tiến trong hoạt động thống kê nhà nước theo quy định tại khoản 3 Điều 50 Luật Thống kê do Thủ trưởng cơ quan thống kê quốc gia thực hiện.\nChủ thể: Nghị định số 94/2016/NĐ-CP, Luật Thống kê, Thủ trưởng cơ quan thống kê quốc gia, Bộ Tài chính\nNgày/thời hạn: 01 tháng 7 năm 2016",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 3,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0003.png",
+      "label": "Điều 4"
+    },
+    {
+      "chunk_id": "p3-s4",
+      "text": "Văn bản: Nghị định 130/2025\nSố hiệu: 130/2025\nTrang: 3\nMục: Điều 5 Hiệu lực thi hành\n1. Nghị định này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2025.\n\n2. Nghị định này hết hiệu lực từ ngày 01 tháng 3 năm 2027 trừ các trường hợp sau:\n\na) Bộ, cơ quan ngang bộ báo cáo Chính phủ đề xuất và được Quốc hội quyết định kéo dài thời gian áp dụng toàn bộ hoặc một phần Nghị định này;\n\nb) Luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Ủy ban Thường vụ Quốc hội, nghị định, nghị quyết của Chính phủ, quyết định của Thủ tướng Chính phủ có quy định về thẩm quyền, trách nhiệm quản lý nhà nước, trình tự, thủ tục quy định tại Nghị định này được thông qua hoặc ban hành kể từ ngày 01 tháng 7 năm 2025, có hiệu lực trước ngày 01 tháng 3 năm 2027 và quy định tương ứng trong Nghị định này hết hiệu lực tại thời điểm các văn bản quy phạm pháp luật đó có hiệu lực.\nChủ thể: Bộ, cơ quan ngang bộ, Chính phủ, Quốc hội, Ủy ban Thường vụ Quốc hội, Thủ tướng Chính phủ\nNgày/thời hạn: 01 tháng 7 năm 2025, 01 tháng 3 năm 2027",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 3,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0003.png",
+      "label": "Điều 5"
+    },
+    {
+      "chunk_id": "p4-s1",
+      "text": "Văn bản: Nghị định\nSố hiệu: 130/2025/NĐ-CP\nTrang: 4\nMục: 3.\nTrong thời gian các quy định của Nghị định này có hiệu lực, nếu quy định về thẩm quyền, trách nhiệm quản lý nhà nước, trình tự, thủ tục trong Nghị định này khác với các văn bản quy phạm pháp luật có liên quan thì thực hiện theo quy định tại Nghị định này.\nChủ thể: Nghị định này\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 4,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0004.png",
+      "label": "3."
+    },
+    {
+      "chunk_id": "p4-s2",
+      "text": "Văn bản: Nghị định\nSố hiệu: 130/2025/NĐ-CP\nTrang: 4\nMục: Nơi nhận\n- Ban Bí thư Trung ương Đảng;\n- Thủ tướng, các Phó Thủ tướng Chính phủ;\n- Các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ;\n- HĐND, UBND các tỉnh, thành phố trực thuộc trung ương;\n- Văn phòng Trung ương và các Ban của Đảng;\n- Văn phòng Tổng Bí thư;\n- Văn phòng Chủ tịch nước;\n- Hội đồng Dân tộc và các Ủy ban của Quốc hội;\n- Văn phòng Quốc hội;\n- Tòa án nhân dân tối cao;\n- Viện kiểm sát nhân dân tối cao;\n- Kiểm toán nhà nước;\n- Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam;\n- Cơ quan trung ương của các đoàn thể;\n- VPCP: BTCN, các PCN, Trợ lý TTg, TGĐ Cổng TTĐT, các Vụ, Cục, đơn vị trực thuộc, Công báo;\n- Lưu: VT, KTTH (2b).\nChủ thể: Ban Bí thư Trung ương Đảng, Chính phủ, HĐND, UBND, Văn phòng Trung ương, Văn phòng Tổng Bí thư, Văn phòng Chủ tịch nước, Hội đồng Dân tộc, Quốc hội, Văn phòng Quốc hội, Tòa án nhân dân tối cao, Viện kiểm sát nhân dân tối cao, Kiểm toán nhà nước, Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam, VPCP\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 4,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0004.png",
+      "label": "Nơi nhận"
+    },
+    {
+      "chunk_id": "p4-s3",
+      "text": "Văn bản: Nghị định\nSố hiệu: 130/2025/NĐ-CP\nTrang: 4\nMục: TM. CHÍNH PHỦ THỦ TƯỚNG – PHÓ THỦ TƯỚNG\nNguyễn Hòa Bình\nChủ thể: Chính phủ, Nguyễn Hòa Bình\n",
+      "source_file": "Nghi_dinh_130_2025.pdf",
+      "page_number": 4,
+      "image_path": "/Users/vunguyen/Documents/Mine/Python_Cyber/Lesson21/vag_pdf_work/pages/db7d4963de2b-page-0004.png",
+      "label": "TM. CHÍNH PHỦ"
+    }
+  ]
+}

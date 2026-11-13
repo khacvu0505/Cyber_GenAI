@@ -1,0 +1,27 @@
+1. Terminal vào source BE
+cd backend -> aws configure
+
+2. Vào Elastic Container Registry -> Repository vừa tạo -> "View push commands" (Lệnh bên dưới chạy để login)
+aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 767398007280.dkr.ecr.ap-northeast-2.amazonaws.com
+
+3. Build docker image
+docker buildx build \
+  --platform linux/amd64 \
+  --tag 767398007280.dkr.ecr.ap-northeast-2.amazonaws.com/app-backend:backend-v1-amd64 \
+  --load \
+  .
+
+4. push docker image vừa tạo   
+docker push 767398007280.dkr.ecr.ap-northeast-2.amazonaws.com/app-backend:backend-v1-amd64
+
+5. Tạo target group
+
+6. Tạo load balancer (EC2)
+
+7. Vào Elastic Container Service(ECS)
+
+
+# Link 
+1. https://docs.google.com/document/d/1r4wUA6LsiAm0UN8jaqbv-QfbFMsTIIPRFsOeeUTVzT8/edit?tab=t.0
+2. https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+

@@ -1,0 +1,11 @@
+terraform init
+
+aws configure
+
+terraform plan
+
+terraform apply
+
+terraform destroy
+
+Terraform sẽ liệt kê những gì sắp xoá rồi hỏi xác nhận, bạn gõ yes. Muốn bỏ qua bước hỏi thì dùng terraform destroy -auto-approve. Quá trình xoá mất khoảng 10–15 phút, lâu nhất là RDS và NAT Gateway.

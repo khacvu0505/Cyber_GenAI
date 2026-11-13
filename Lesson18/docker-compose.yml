@@ -1,0 +1,49 @@
+name: data-augmented-bi-copilot
+
+services:
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_DRIVER: postgresql+asyncpg
+      DB_HOST: database
+      DATABASE: proposal_db
+      DB_USER: ${POSTGRES_USER:-proposal}
+      DB_PASS: ${POSTGRES_PASSWORD:-proposal123}
+      DB_PORT: 5432
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_MODEL: ${OPENAI_MODEL}
+      JWT_SECRET: ${JWT_SECRET}
+      FRONTEND_ORIGIN: http://localhost:3000
+    # depends_on:
+    #   database:
+    #     condition: service_healthy
+    ports:
+      - 8000:8000
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 30s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+    ports:
+      - 3000:3000
+    environment:
+      BACKEND_INTERNAL_URL: http://backend:8000
+
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped

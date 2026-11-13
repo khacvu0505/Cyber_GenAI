@@ -1,0 +1,11 @@
+# Dependencies and Next.js build artifacts
+node_modules/
+.next/
+out/
+
+# Local configuration and diagnostics
+.env.local
+.env*.local
+!.env.example
+npm-debug.log*
+.DS_Store

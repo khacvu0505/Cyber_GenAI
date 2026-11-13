@@ -28,3 +28,4 @@ build/
 genai-courses_credentials.csv
 genai-courses_accessKeys.csv
 Lesson14/lesson14-key.pem
+*.db

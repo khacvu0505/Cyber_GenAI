@@ -1,0 +1,945 @@
+:root {
+  --bg: #f4f6f8;
+  --panel: #ffffff;
+  --ink: #172026;
+  --muted: #68737d;
+  --line: #d9e1e7;
+  --teal: #0f766e;
+  --teal-strong: #0a5c56;
+  --blue: #2563eb;
+  --amber: #b45309;
+  --rose: #be123c;
+  --green: #15803d;
+  --shadow: 0 16px 38px rgba(22, 32, 38, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.shell {
+  width: min(1640px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 18px 0 28px;
+}
+
+.authShell {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  width: min(980px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 34px 0;
+}
+
+.authHero {
+  display: grid;
+  justify-items: center;
+  gap: 22px;
+  width: 100%;
+}
+
+.authHeader {
+  display: grid;
+  justify-items: center;
+  max-width: 760px;
+  text-align: center;
+}
+
+.authHeader h1 {
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.authHeader p:not(.eyebrow) {
+  max-width: 690px;
+  margin: 12px 0 0;
+  color: #3f4c55;
+  line-height: 1.6;
+}
+
+.authStats {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.authCard {
+  display: grid;
+  gap: 16px;
+  width: min(440px, 100%);
+  padding: 22px;
+}
+
+.authCardHeader {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.authCardHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.authIcon {
+  display: inline-grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  border-radius: 14px;
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--teal);
+}
+
+.authBoxLarge {
+  min-width: 0;
+  border: 0;
+  padding: 0;
+}
+
+.authFieldsLarge {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.authFieldsLarge input,
+.authFieldsLarge select {
+  width: 100%;
+}
+
+.authFieldsLarge .primaryButton {
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+}
+
+.authDemoBox {
+  display: grid;
+  gap: 6px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.authDemoBox strong {
+  color: var(--ink);
+}
+
+.authNotice {
+  width: min(440px, 100%);
+  margin: 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 72px;
+}
+
+.topbar h1,
+.panel h2,
+.courseHero h2,
+.lessonHeader h2 {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.topbar h1 {
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.topbarActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.statusPill,
+.accountPill,
+.metric,
+.progressBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  padding: 0 11px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.statusPill.ok {
+  color: var(--green);
+  border-color: rgba(21, 128, 61, 0.24);
+}
+
+.statusPill.warn {
+  color: var(--amber);
+  border-color: rgba(180, 83, 9, 0.26);
+}
+
+.accountPill {
+  border-radius: 8px;
+  color: var(--ink);
+}
+
+.accountPill span {
+  display: grid;
+  gap: 1px;
+  line-height: 1.1;
+}
+
+.accountPill small {
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.accountPill button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--muted);
+}
+
+.authBox {
+  display: grid;
+  gap: 7px;
+  min-width: min(620px, 100%);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px;
+}
+
+.authModeRow,
+.authFields {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.authModeRow button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--muted);
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.authModeRow button.active {
+  border-color: rgba(15, 118, 110, 0.35);
+  background: rgba(15, 118, 110, 0.09);
+  color: var(--teal);
+}
+
+.authFields input,
+.authFields select {
+  width: 155px;
+  min-height: 34px;
+  border-radius: 8px;
+}
+
+.authFields .primaryButton {
+  width: auto;
+  min-height: 34px;
+}
+
+.authHint {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.authBox.authBoxLarge {
+  min-width: 0;
+  border: 0;
+  padding: 0;
+}
+
+.authFields.authFieldsLarge {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.authFields.authFieldsLarge input,
+.authFields.authFieldsLarge select {
+  width: 100%;
+}
+
+.authFields.authFieldsLarge .primaryButton {
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+}
+
+.marketLayout {
+  display: grid;
+  grid-template-columns: minmax(300px, 380px) minmax(540px, 1fr) minmax(320px, 420px);
+  gap: 16px;
+  align-items: start;
+}
+
+.panel {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.catalogPanel,
+.curriculumPanel,
+.aiPanel,
+.playerPanel,
+.courseHero {
+  padding: 16px;
+}
+
+.panelHeader,
+.lessonHeader,
+.courseHero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.panelHeader.compact {
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.panel h2,
+.lessonHeader h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 0 12px;
+}
+
+.searchBox input,
+.categoryRow button,
+.lessonItem,
+.courseCard {
+  min-width: 0;
+}
+
+input,
+select {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  outline: none;
+  padding: 0 12px;
+}
+
+.searchBox input {
+  min-height: 38px;
+  border: 0;
+  padding: 0;
+}
+
+input:focus,
+select:focus {
+  border-color: rgba(15, 118, 110, 0.75);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.14);
+}
+
+.categoryRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 14px 0;
+}
+
+.chip {
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.chip.active {
+  border-color: rgba(15, 118, 110, 0.35);
+  background: rgba(15, 118, 110, 0.09);
+  color: var(--teal);
+}
+
+.courseList,
+.sectionList,
+.artifactList {
+  display: grid;
+  gap: 10px;
+}
+
+.courseList {
+  max-height: calc(100vh - 250px);
+  overflow: auto;
+  padding-right: 2px;
+}
+
+.courseCard {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 12px;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  padding: 10px;
+  text-align: left;
+}
+
+.courseCard.active {
+  border-color: rgba(15, 118, 110, 0.45);
+  background: rgba(15, 118, 110, 0.06);
+}
+
+.courseCard img {
+  width: 112px;
+  aspect-ratio: 16 / 10;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #e7ecef;
+}
+
+.courseCard strong {
+  display: block;
+  line-height: 1.3;
+}
+
+.courseCard p {
+  display: -webkit-box;
+  margin: 5px 0 8px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.courseMeta,
+.heroStats,
+.aiActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.courseMeta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #44515a;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #e7edf1;
+}
+
+.progressTrack span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--teal);
+}
+
+.learningPanel {
+  display: grid;
+  gap: 16px;
+}
+
+.courseHero {
+  align-items: stretch;
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(37, 99, 235, 0.08)),
+    #fff;
+}
+
+.courseIntro {
+  min-width: 0;
+}
+
+.courseIntro h2 {
+  font-size: 28px;
+  line-height: 1.12;
+}
+
+.courseIntro p {
+  max-width: 780px;
+  color: #3f4c55;
+  line-height: 1.58;
+}
+
+.heroStats {
+  margin-top: 14px;
+}
+
+.metric {
+  border-radius: 8px;
+}
+
+.metric strong {
+  color: var(--ink);
+}
+
+.enrollBox {
+  display: grid;
+  gap: 9px;
+  min-width: 190px;
+  align-content: start;
+  border-left: 1px solid rgba(15, 118, 110, 0.18);
+  padding-left: 16px;
+}
+
+.enrollBox strong {
+  font-size: 26px;
+}
+
+.enrollBox span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.watchGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 330px);
+  gap: 16px;
+}
+
+.playerPanel {
+  min-height: 510px;
+}
+
+.lessonHeader {
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.playerFrame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #0f172a;
+}
+
+.playerFrame iframe,
+.playerFrame video {
+  width: 100%;
+  height: 100%;
+}
+
+.curriculumPanel {
+  max-height: 620px;
+  overflow: auto;
+}
+
+.sectionBlock {
+  display: grid;
+  gap: 7px;
+}
+
+.sectionBlock h3 {
+  margin: 8px 0 4px;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.lessonItem {
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  gap: 9px;
+  align-items: center;
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  padding: 9px;
+  text-align: left;
+}
+
+.lessonItem.active {
+  border-color: rgba(37, 99, 235, 0.45);
+  background: rgba(37, 99, 235, 0.07);
+}
+
+.lessonItem span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.lessonItem small {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.aiPanel {
+  position: sticky;
+  top: 16px;
+  max-height: calc(100vh - 36px);
+  overflow: auto;
+}
+
+.aiActions {
+  margin-bottom: 14px;
+}
+
+.providerBox {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 6px;
+}
+
+.providerBox span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.modelHint {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0 13px;
+  font-weight: 850;
+}
+
+.primaryButton {
+  width: 100%;
+  background: var(--teal);
+  color: #fff;
+}
+
+.primaryButton.small {
+  padding: 0 11px;
+  font-size: 13px;
+}
+
+.primaryButton:hover {
+  background: var(--teal-strong);
+}
+
+.secondaryButton {
+  border-color: var(--line);
+  background: #fff;
+  color: var(--ink);
+}
+
+.secondaryButton.fit {
+  width: auto;
+}
+
+.secondaryButton:hover {
+  border-color: rgba(37, 99, 235, 0.3);
+  color: var(--blue);
+}
+
+.studyBlock {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.studyBlock h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.markdownLike {
+  white-space: pre-wrap;
+  color: #26333b;
+  font-size: 14px;
+  line-height: 1.62;
+}
+
+.mutedCopy,
+.tinyNote,
+.rolePanel p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.artifactItem {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 11px;
+}
+
+.artifactItem strong {
+  display: block;
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+.artifactItem p {
+  margin: 0;
+  color: #344149;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.jsonBlock {
+  overflow: auto;
+  max-height: 360px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #111827;
+  color: #e5e7eb;
+  padding: 12px;
+}
+
+.rolePanel {
+  margin-top: 14px;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: 8px;
+  background: rgba(37, 99, 235, 0.07);
+  padding: 12px;
+}
+
+.emptyState {
+  display: grid;
+  place-items: center;
+  min-height: 240px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  text-align: center;
+  padding: 20px;
+}
+
+.emptyState p {
+  margin: 0 0 6px;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.emptyState span {
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+.notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 14px;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.errorNotice {
+  border: 1px solid rgba(190, 18, 60, 0.24);
+  background: rgba(190, 18, 60, 0.08);
+  color: var(--rose);
+}
+
+.spin {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1320px) {
+  .marketLayout {
+    grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
+  }
+
+  .aiPanel {
+    position: static;
+    grid-column: 1 / -1;
+    max-height: none;
+  }
+}
+
+@media (max-width: 940px) {
+  .shell,
+  .authShell {
+    width: min(100% - 20px, 840px);
+  }
+
+  .topbar,
+  .marketLayout,
+  .watchGrid,
+  .courseHero,
+  .authHero {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .authHero {
+    padding: 18px 0;
+  }
+
+  .topbarActions {
+    justify-content: flex-start;
+  }
+
+  .enrollBox {
+    border-left: 0;
+    border-top: 1px solid rgba(15, 118, 110, 0.18);
+    padding: 14px 0 0;
+  }
+
+  .catalogPanel {
+    order: 2;
+  }
+
+  .courseList {
+    max-height: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .topbar h1 {
+    font-size: 26px;
+  }
+
+  .authHero h1 {
+    font-size: 32px;
+  }
+
+  .authCard {
+    padding: 18px;
+  }
+
+  .courseIntro h2 {
+    font-size: 23px;
+  }
+
+  .courseCard {
+    grid-template-columns: 1fr;
+  }
+
+  .courseCard img {
+    width: 100%;
+  }
+
+  .lessonHeader {
+    align-items: stretch;
+    display: grid;
+  }
+}

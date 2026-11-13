@@ -1,0 +1,39 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Test and coverage output
+.coverage
+coverage.xml
+htmlcov/
+
+# Local environment and secrets
+.env
+.env.local
+.env.*.local
+
+# CrewAI runtime data
+.crewai/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Packaging output
+build/
+dist/
+*.egg-info/
+
+# Logs and OS files
+*.log
+.DS_Store
